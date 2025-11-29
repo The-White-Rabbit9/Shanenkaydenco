@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shane & Kayden Yard Workers</title>
+  <style>
+    :root {
+      --green: #2e7d32;
+      --dark: #1b1b1b;
+      --light: #f7f7f7;
+      --accent: #1e88e5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+    header {
+      background: linear-gradient(135deg, var(--green), #43a047);
+      color: #fff;
+      padding: 64px 24px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2.25rem; }
+    header p { margin: 8px auto 16px; max-width: 720px; font-size: 1.05rem; }
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky; top: 0; z-index: 10;
+    }
+    nav ul {
+      list-style: none; margin: 0; padding: 8px 16px; display: flex; gap: 16px; justify-content: center;
+    }
+    nav a { color: var(--dark); text-decoration: none; font-weight: 600; padding: 10px; border-radius: 6px; }
+    nav a:hover { background: var(--light); }
+    main { padding: 32px 16px; max-width: 1000px; margin: 0 auto; }
+    section { margin-bottom: 48px; }
+    h2 { margin: 0 0 12px; font-size: 1.8rem; color: var(--green); }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;
+    }
+    .card {
+      border: 1px solid #eee; border-radius: 12px; padding: 16px; background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .badge {
+      display: inline-block; background: var(--light); color: var(--dark);
+      padding: 6px 10px; border-radius: 999px; font-size: 0.9rem; border: 1px solid #e9e9e9;
+    }
+    ul { padding-left: 18px; }
+    footer {
+      background: #f3f7f4; color: #333; padding: 24px 16px; text-align: center; border-top: 1px solid #e6efe8;
+    }
+    .note { font-size: 0.95rem; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shane & Kayden Yard Workers</h1>
+    <p>We’re young entrepreneurs serving our neighborhood with honest work: raking leaves, shoveling snow, and mowing lawns. We take pride in reliable service, fair prices, and using the money we earn for good in our community.</p>
+  </header>
+
+  <nav aria-label="Site">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="services">
+      <h2>Our services</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="badge">Leaves</span>
+          <h3>Raking & bagging</h3>
+          <ul>
+            <li><strong>What we do:</strong> Rake, bag, and tidy yard and walkways.</li>
+            <li><strong>Add-ons:</strong> Curbside bag placement or bin loading.</li>
+            <li><strong>Best for:</strong> Fall cleanups and post-storm leaf piles.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">Snow</span>
+          <h3>Shoveling</h3>
+          <ul>
+            <li><strong>What we do:</strong> Clear driveways, sidewalks, and steps.</li>
+            <li><strong>Safety:</strong> Salt/sand on request (provided by you).</li>
+            <li><strong>Best for:</strong> Light to moderate snowfalls.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">Grass</span>
+          <h3>Lawn mowing</h3>
+          <ul>
+            <li><strong>What we do:</strong> Mow and edge visible areas.</li>
+            <li><strong>Finish:</strong> Quick cleanup of clippings.</li>
+            <li><strong>Best for:</strong> Small to medium yards.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Simple pricing</h2>
+      <p class="note">We charge based on yard size and how much grass, leaves, or snow there is. Most jobs fall between $15–$20. Very small jobs can be as low as $10. We’ll confirm the price before we start so it’s always clear.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Typical ranges</h3>
+          <ul>
+            <li><strong>Raking:</strong> $15–$20 (light to moderate leaves)</li>
+            <li><strong>Shoveling:</strong> $15–$20 (light snow, standard driveway/sidewalk)</li>
+            <li><strong>Mowing:</strong> $15–$20 (small–medium yard)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Small jobs</h3>
+          <ul>
+            <li><strong>Quick tasks:</strong> $10–$15 (porch steps, short walkway, tiny patches)</li>
+            <li><strong>Bundle & save:</strong> Combine two tasks for a fair, single price.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Free estimates</h3>
+          <ul>
+            <li><strong>No surprises:</strong> We agree on price before work begins.</li>
+            <li><strong>Payment:</strong> Cash preferred; other options on request.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="hours">
+      <h2>Hours of Operation</h2>
+      <ul>
+        <li><strong>Friday:</strong> after 4 PM</li>
+        <li><strong>Saturday:</strong> after 12 PM (noon)</li>
+        <li><strong>Sunday:</strong> after 12 PM (noon)</li>
+      </ul>
+      <p class="note">We’re flexible — reach out and we’ll do our best to fit your schedule.</p>
+    </section>
+
+    <section id="about">
+      <h2>About us</h2>
+      <p>We’re Shane and Kayden—motivated, hardworking, and learning how to run a small business the right way. We show up on time, do the work carefully, and treat every yard like it’s our own. The money we earn helps fund school needs, save for future goals, and support good causes locally.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact us</h2>
+      <p class="note">Text or call for fastest replies. Share your address, the job type, and we’ll respond with a quick estimate.</p>
+      <div class="card">
+        <h3>Reach out</h3>
+        <ul>
+          <li><strong>Phone (text/call):</strong> 757-215-5808</li>
+          <li><strong>Service area:</strong> Norfolk, VA and nearby neighborhoods</li>
+          <li><strong>Availability:</strong> 
+            <ul>
+              <li>Friday: after 4 PM</li>
+              <li>Saturday: after 12 PM (noon)</li>
+              <li>Sunday: after 12 PM (noon)</li>
+            </ul>
+          </li
