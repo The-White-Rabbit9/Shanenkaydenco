@@ -55,6 +55,8 @@
       background: #f3f7f4; color: #333; padding: 24px 16px; text-align: center; border-top: 1px solid #e6efe8;
     }
     .note { font-size: 0.95rem; color: #555; }
+    details { margin: 8px 0; }
+    summary { cursor: pointer; font-weight: 600; color: var(--accent); }
   </style>
 </head>
 <body>
@@ -67,6 +69,7 @@
     <ul>
       <li><a href="#services">Services</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#choose">Why choose us</a></li>
       <li><a href="#hours">Hours</a></li>
       <li><a href="#about">About us</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -92,7 +95,7 @@
           <ul>
             <li><strong>What we do:</strong> Clear driveways, sidewalks, and steps.</li>
             <li><strong>Safety:</strong> Salt/sand on request (provided by you).</li>
-            <li><strong>Best for:</strong> Light to moderate snowfalls.</li>
+            <li><strong>Best for:</strong> Driveway, sidewalk, and stairs.</li>
           </ul>
         </div>
         <div class="card">
@@ -109,14 +112,14 @@
 
     <section id="pricing">
       <h2>Simple pricing</h2>
-      <p class="note">We charge based on yard size and how much grass, leaves, or snow there is. Most jobs fall between $15–$20. Very small jobs can be as low as $10. We’ll confirm the price before we start so it’s always clear.</p>
+      <p class="note">We charge based on yard size and how much grass, leaves, or snow there is. Pricing is clear and agreed upon before we start.</p>
       <div class="grid">
         <div class="card">
           <h3>Typical ranges</h3>
           <ul>
-            <li><strong>Raking:</strong> $15–$20 (light to moderate leaves)</li>
-            <li><strong>Shoveling:</strong> $15–$20 (light snow, standard driveway/sidewalk)</li>
-            <li><strong>Mowing:</strong> $15–$20 (small–medium yard)</li>
+            <li><strong>Raking:</strong> $15–$20 per hour</li>
+            <li><strong>Shoveling:</strong> $30–$40 (driveway, sidewalk, and stairs)</li>
+            <li><strong>Mowing:</strong> $15–$20 per hour</li>
           </ul>
         </div>
         <div class="card">
@@ -136,6 +139,26 @@
       </div>
     </section>
 
+    <section id="choose">
+      <h2>Why choose us?</h2>
+      <details>
+        <summary>Reliable service</summary>
+        <p>We show up on time and finish the job as promised.</p>
+      </details>
+      <details>
+        <summary>Fair pricing</summary>
+        <p>Clear hourly rates and upfront estimates — no hidden costs.</p>
+      </details>
+      <details>
+        <summary>Community-focused</summary>
+        <p>We use our earnings to support school needs and local causes.</p>
+      </details>
+      <details>
+        <summary>Hardworking team</summary>
+        <p>We treat every yard like it’s our own and take pride in careful work.</p>
+      </details>
+    </section>
+
     <section id="hours">
       <h2>Hours of Operation</h2>
       <ul>
@@ -148,21 +171,23 @@
 
     <section id="about">
       <h2>About us</h2>
-      <p>We’re Shane and Kayden—motivated, hardworking, and learning how to run a small business the right way. We show up on time, do the work carefully, and treat every yard like it’s our own. The money we earn helps fund school needs, save for future goals, and support good causes locally.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact us</h2>
-      <p class="note">Text or call for fastest replies. Share your address, the job type, and we’ll respond with a quick estimate.</p>
-      <div class="card">
-        <h3>Reach out</h3>
-        <ul>
-          <li><strong>Phone (text/call):</strong> 757-215-5808</li>
-          <li><strong>Service area:</strong> Norfolk, VA and nearby neighborhoods</li>
-          <li><strong>Availability:</strong> 
-            <ul>
-              <li>Friday: after 4 PM</li>
-              <li>Saturday: after 12 PM (noon)</li>
-              <li>Sunday: after 12 PM (noon)</li>
-            </ul>
-          </li
+      <p>We’re Shane and Kayden—motivated, hardworking, and learning how to run a small business the right way. We show up on time
+  <section id="contact-dropdown">
+  <h2>Quick Contact</h2>
+  <details>
+    <summary>Phone number</summary>
+    <p><a href="tel:7572155808">757-215-5808</a> (text or call for fastest replies)</p>
+  </details>
+  <details>
+    <summary>Service area</summary>
+    <p>Norfolk, VA and nearby neighborhoods</p>
+  </details>
+  <details>
+    <summary>Availability</summary>
+    <ul>
+      <li>Friday: after 4 PM</li>
+      <li>Saturday: after 12 PM (noon)</li>
+      <li>Sunday: after 12 PM (noon)</li>
+    </ul>
+  </details>
+</section>
